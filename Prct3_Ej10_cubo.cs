@@ -23,7 +23,7 @@ public class Prct3_Ej10_cubo : MonoBehaviour
             this.transform.Translate(transform.forward * Time.deltaTime * Input.GetAxis("Vertical") * speed, Space.World);
         }
         if(Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow)) {
-            
+            // Si QUISIERAMOS que la rotacion fuese más suave, añadiriamos Slerp, o, Lerp
             transform.Rotate(0,rotation,0);
         }
     }
